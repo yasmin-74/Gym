@@ -8,30 +8,42 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-image: url("https://i.pinimg.com/736x/2e/2b/bf/2e2bbfd31cac2979925bc8e9b8c6934e.jpg");
+            background-image: url("https://i.pinimg.com/736x/c8/0a/9d/c80a9d04c06e8f0376bab77c4fe7cbc2.jpg");
         }
 
         .accordion-button:not(.collapsed) {
-            background: linear-gradient(90deg, #7d3636, #a26262) !important;
+            background: linear-gradient(90deg, #406070, #9da8b0) !important;
             color: white;
         }
 
 
+.main-container {
+  margin-top: 100px; /* Pushes accordion lower */
+} 
+.accordion-button.section{
+                        background: linear-gradient(90deg, #406070, #1d3443) !important;
 
-        .accordion-button {
-            background: linear-gradient(90deg, #390404, #a26262) !important;
             color: white;
             font-size: 20px !important;
             font-weight: 600;
+            height:80px;
+        }
+        .accordion-button {
+                        background: linear-gradient(90deg, #406070, #1d3443) !important;
+
+            color: white;
+            font-size: 20px !important;
+            font-weight: 600;
+            height:60px;
         }
 
         .according {
-            background: linear-gradient(90deg, #390404, #a26262) !important;
+            background: linear-gradient(90deg, #406070, #1d3443) !important;
 
         }
 
         .accordion-body {
-            background: linear-gradient(90deg, #390404, #a26262) !important;
+            background: linear-gradient(90deg, #406070, #1d3443) !important;
             border: 1px solid #dee2e6;
         }
 
@@ -48,33 +60,31 @@
         }
 
         .accordion-item {
-            background: linear-gradient(90deg, #390404, #a26262) !important;
+            background: linear-gradient(90deg, #404999, #243352) !important;
 
         }
 
-        .according {
-            height: 600px !important;
-        }
+      
     </style>
 </head>
 
 <body class="p-4">
 
-    <div class="container mt-5">
-        <h1 class="mb-4 justify-content-center align-items-center text-center">GYM 🏋🏻</h1>
-        <p class="mb-4">Small progress is still progress. Show up again tomorrow.</p>
+    <div class="container main-container mt-5 justify-content-center">
+        <h1 style="margin-top: 100px; font-weight: 600; font-size: 50px;" class="mb-4 justify-content-center align-items-center text-center">GYM 🏋🏻</h1>
+        <h1 style="margin-top: 150px;" class="mb-4">Small progress is still progress. Show up again tomorrow.</h1>
 
-        <div class="accordion" id="mainAccordion">
+        <div class="accordion main-container" id="mainAccordion">
 
             <!-- Main Item 1 -->
             <div class="accordion-item">
                 <h2 class="accordion-header" id="mainHeadingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    <button class="accordion-button section collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#mainCollapseOne">
                         Section 1
                     </button>
                 </h2>
-                <div id="mainCollapseOne" class="accordion-collapse collapse show" data-bs-parent="#mainAccordion">
+                <div id="mainCollapseOne" class="accordion-collapse collapse " data-bs-parent="#mainAccordion">
                     <div class="accordion-body">
                         <div class="accordion" id="nestedAccordion1">
                             <!-- 5 nested items -->
@@ -153,7 +163,7 @@
             <!-- Main Item 2 -->
             <div class="accordion-item">
                 <h2 class="accordion-header" id="mainHeadingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    <button class="accordion-button collapsed section" type="button" data-bs-toggle="collapse"
                         data-bs-target="#mainCollapseTwo">
                         Section 2
                     </button>
@@ -237,7 +247,7 @@
             <!-- Main Item 3 -->
             <div class="accordion-item">
                 <h2 class="accordion-header" id="mainHeadingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    <button class="accordion-button collapsed section" type="button" data-bs-toggle="collapse"
                         data-bs-target="#mainCollapseThree">
                         Section 3
                     </button>
